@@ -1,0 +1,187 @@
+
+body{
+  font-size:22px ;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-item a {
+   display: inline-block;
+   padding: 0px 20px;
+}
+.nav-item {
+   transition:all 0.3s ease 0s;
+}
+.nav-item :hover {
+   color: red;
+}
+.navbar-text {
+  background-color: gold;
+}
+main {
+  margin: o;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+h1 {
+  font-family:'Work Sans', sans-serif;
+  font-size: 350%;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 3px 3px #666;
+}
+.slide {
+  position: relative;
+  padding: 25% 10%;
+  min-height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+.slide, .slide:before {
+  background: 50% 50% /cover;
+}
+#intro {
+  background-image: url("https://media.istockphoto.com/id/1435220822/photo/african-american-software-developer.jpg?s=2048x2048&w=is&k=20&c=d1UoAVikBSCBACAx6VowheFeZQbmJymYjqQKQeK48jI=");
+  z-index: 2;
+}
+#slide1 {
+  background-image: url("https://media.istockphoto.com/id/1419766496/photo/abstract-concepts-of-cybersecurity-technology-and-digital-data-protection-protect-internet.jpg?s=612x612&w=0&k=20&c=3GM-GKO4wrU1wj03fE21cQXSVhvGBF8AO-9lOLpiaq8=");
+  transform: translateZ(px) scale(2);
+  z-index: 2;
+}
+#slide2 {
+  background-image: url("https://media.istockphoto.com/id/1406674466/photo/big-data-connection-technology-concept.jpg?s=612x612&w=0&k=20&c=OPoKST8TVjklrGs89VnPDduGvp9zwiMXnavSruKMLyI=");
+  z-index: 2;
+  }
+  .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+  }
+  
+  .container:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("https://cdn.pixabay.com/photo/2018/07/25/16/00/art-3561710_640.jpg") no-repeat center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+  }
+  
+  
+  .contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+  }
+  
+  .left{
+    background: url("https://media.istockphoto.com/id/1351325360/photo/customer-service-agent-financial-advisor-call-center-employee-sits-at-desk-in-company-in.jpg?s=612x612&w=0&k=20&c=dike6AQLbQlPNrgN_k554egtR2mHuqlV5WlTbd_2Neo=") no-repeat center;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  .right{
+    padding: 25px 40px;
+  }
+  
+  h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  h2:after{
+    content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      height: 4px;
+      width: 50px;
+      border-radius: 2px;
+      background-color: #2ecc71;
+  }
+  
+  .field{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+  }
+  
+  .field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea{
+    min-height: 150px;
+  }
+  
+  .btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .btn:hover{
+      background-color: #27ae60;
+  }
+  
+  .field:focus{
+      border: 2px solid rgba(30,85,250,0.47);
+      background-color: #fff;
+  }
+  .about-image img{
+    max-width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+  @media screen and (max-width: 880px){
+    .contact-box{
+      grid-template-columns: 1fr;
+    }
+    .left{
+      height: 200px;
+    }
+  }
